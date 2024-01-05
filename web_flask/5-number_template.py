@@ -38,7 +38,7 @@ def display_pythonText(text='is cool'):
 def display_if_int(n):
     return '%d is a number' % (n)
 
-@app.route('number/<int:n>', strict-slashes=False)
+@app.route('number_template/<int:n>', strict-slashes=False)
 def display_html(n):
     """Renders template if number is an integer"""
     return render_template('5-number.html', num=n)
