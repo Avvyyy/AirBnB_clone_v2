@@ -1,4 +1,5 @@
 #1/usr/bin/pyhton3
+"""Defines routes"""
 from flask import Flask
 app = Flask(__name__)
 
