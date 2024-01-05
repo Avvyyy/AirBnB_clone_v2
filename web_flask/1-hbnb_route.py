@@ -1,4 +1,4 @@
-#1/usr/bin/pyhton3
+#!/usr/bin/pyhton3
 """Defines routes"""
 
 from flask import Flask
@@ -20,7 +20,7 @@ def home():
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """
-    hbnb route
+    Flask hbnb route
     
     Arguments:
     None
