@@ -1,22 +1,15 @@
 #!/usr/bin/python3
-"""Defines routes"""
+"""Script that starts a Flask Web application"""
 
 from flask import Flask
+
 app = Flask(__name__)
 
+
 @app.route("/", strict_slashes=False)
-def home():
-	"""
-	A home route in flask
-	
-	Arguments:
-	None
+def display_hello():
+    return "Hello HBNB!"
 
-	Return:
-	Hello HBNB!
-	"""
-	return"Hello HBNB!"
 
-if __name__ == "__main__":
-    """Making the app to run"""
-	app.run(host='0.0.0.0', port=5000)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
